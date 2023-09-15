@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <style>
+      .table-employee{
+          width: 500px;
+          border-collapse: collapse;
+          text-align: center;
+      }
+      .table-employee tr,td      {
+          border: 1px solid black
+      }
+      #table--header{
+          background-color: blue;
+          color: white;
+
+      }
+    </style>
+</head>
+<body>
+<form action="" method="post" enctype="multipart/form-data">
+    <h2>login</h2>
+    <div>
+        <label for="email">email</label>
+        <input type="text" id="email" name="email">
+    </div>
+    <div>
+        <label for="password">password</label>
+        <input type="text" id="password" name="password">
+    </div>
+    <div>
+        <input id="remember me" name="remember me" type="checkbox">
+        <label for="remember me">remember me</label>
+
+    </div>
+   <div>
+       <label for="avatar">avatar</label>
+       <input type="file" id="avatar" name="avatar">
+       </div>
+    <button type="submit">login</button>
+    <button type="reset">clear</button>
+
+</form>
+
+
+<table class="table-employee">
+    <caption>Employees list</caption>
+    <tr id="table--header" >
+        <td colspan="2">teo</td>
+        <td>Email</td>
+        <td>Phone</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>A</td>
+        <td>A@gmail.com</td>
+        <td>01234567</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td rowspan="2">B</td>
+        <td>B@gmail.com</td>
+        <td>023445</td>
+    </tr>
+    <tr>
+        <td>3</td>
+
+        <td>C@GMAIL.COM</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>d</td>
+        <td>d@gmail.com</td>
+        <td>123</td>
+    </tr>
+</table>
+
+
+
+
+</body>
+</html>
